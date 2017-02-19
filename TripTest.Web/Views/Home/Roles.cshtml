@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Check role";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>Application Roles:</h3>
+    <ul>
+        @foreach (string str in (List<string>)ViewData["appRoles"])
+        {
+            <li>@str</li>
+        }
+    </ul>
